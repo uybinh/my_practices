@@ -25,7 +25,7 @@ function logger(func) {
 
   // the inner function with closure
   function logFunc(a, b) {
-    // have 2 parameters 'a' and 'b' to receive 2 arguments for function 'func'
+    // have 2 parameters 'a' and 'b' to receive 2 arguments to pass to function 'func'
     // a, b will be pass to x, y in 'add' or 'sub'
     var result = func(a, b);
     console.log(`Running function '${func.name}' with result ${result}`);
